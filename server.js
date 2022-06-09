@@ -6,7 +6,7 @@ import express from 'express'
 //声明常量app，值是express方法的调用
 const app = express()
 //静态资源文件夹
-app.use(express.static("./dist"))
+app.use(express.static("dist"))
 const template = `
 <html>
 <head>
@@ -14,7 +14,7 @@ const template = `
 </head>
 <body>
 <div id="root"></div>
-<script src="bundle.js"></srcipt>
+<script src="bundle.js"></script>
 </body>
 </html>
 `
